@@ -72,17 +72,17 @@ public class EmployeeServlet extends HttpServlet {
         requestDispatcher.forward(request, response);
     }
 
-    public void create(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void create(HttpServletRequest request, HttpServletResponse response) throws IOException {
         employeeService.save(request);
         response.sendRedirect("employee");
     }
 
-    public void edit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void edit(HttpServletRequest request, HttpServletResponse response) throws IOException {
         employeeService.save(request);
         response.sendRedirect("employee");
     }
 
-    public void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void delete(HttpServletRequest request, HttpServletResponse response) throws IOException {
         employeeService.delete(request);
         response.sendRedirect("employee");
     }

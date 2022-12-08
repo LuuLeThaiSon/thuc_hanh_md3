@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 public class EmployeeService {
-    private EmployeeDAO employeeDAO;
-    private DepartmentDAO departmentDAO;
+    private final EmployeeDAO employeeDAO;
+    private final DepartmentDAO departmentDAO;
 
     public EmployeeService() {
         employeeDAO = new EmployeeDAO();

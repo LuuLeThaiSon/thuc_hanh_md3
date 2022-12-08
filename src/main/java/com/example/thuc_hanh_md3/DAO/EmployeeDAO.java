@@ -12,7 +12,7 @@ import java.util.List;
 
 public class EmployeeDAO {
     private final Connection connection;
-    private DepartmentDAO departmentDAO;
+    private final DepartmentDAO departmentDAO;
 
     public EmployeeDAO() {
         connection = MyConnection.getConnection();
@@ -24,6 +24,7 @@ public class EmployeeDAO {
     private final String UPDATE = "update employee set name = ?, email = ?, address = ?, phoneNumber = ?, salary = ?, departmentId = ? where id = ?;";
     private final String DELETE = "delete from employee where id = ?;";
     private final String SEARCH = "select * from employee where name like concat('%',?,'%');";
+
     public List<Employee> findAll() {
         List<Employee> employees = new ArrayList<>();
         try(PreparedStatement ps = connection.prepareStatement(FIND_ALL)) {
