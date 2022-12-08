@@ -61,7 +61,7 @@
         <tr>
             <td class="text-center">${e.getId()}</td>
             <td>${e.getName()}</td>
-            <td class="text-center">${e.getEmail()}</td>
+            <td>${e.getEmail()}</td>
             <td class="text-center">${e.getAddress()}</td>
             <td class="text-center">${e.getPhoneNumber()}</td>
             <td class="text-center">${e.getSalary()}</td>

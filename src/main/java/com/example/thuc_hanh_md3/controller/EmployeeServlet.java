@@ -89,6 +89,8 @@ public class EmployeeServlet extends HttpServlet {
 
     public void search(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         List<Employee> employees = employeeService.search(request);
+        List<Department> departments = departmentDAO.findAll();
+        request.setAttribute("departments", departments);
         request.setAttribute("employees", employees);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
         requestDispatcher.forward(request, response);
