@@ -38,7 +38,7 @@
             <td>
                 <form action="employee?action=search" method="post" class="mb-2 mt-2">
                     <input class="ms-5 me-0" type="text" name="searchWord" id="" placeholder="Search">
-                    <button class="ms-0"><i class="fa-brands fa-searchengin me-0"></i></button>
+                    <button class="ms-0" style="border-radius: 3px"><i class="fa-brands fa-searchengin me-0"></i></button>
                 </form>
             </td>
         </tr>
